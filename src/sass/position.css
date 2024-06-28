@@ -1,0 +1,11 @@
+.top-20 {
+    top: 20vh !important;
+  }
+  
+.start-20 {
+    left: 20vw !important;
+  }
+
+.mt-n1 {
+    margin-top: -0.5rem !important;
+  }

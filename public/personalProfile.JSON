@@ -1,0 +1,28 @@
+{
+    "data": [
+    {
+    "userId": "555",
+    "userName": "ray",
+    "email": "ray68125@gmail.com",
+    "name": "ray",
+    "walletBalance": "500",
+    "profilePicture": "https://tw.portal-pokemon.com/play/resources/pokedex/img/pm/51db1f9485915c397954484d590554325cab7621.png",
+    "coupons": [
+        {
+        "couponId": "1",
+        "amount": "10",
+        "discount":"10",
+        "description":"黯然消魂家常菜-生菜滿100折10元",
+        "expiryDate": "2022-12-31"
+        },
+        {
+        "couponId": "2",
+        "amount": "10",
+        "discount":"20",
+        "description":"QQ好喝咩噗茶-買茶類折10元",
+        "expiryDate": "2023-01-31"
+        }
+        ]
+    }
+    ]
+}

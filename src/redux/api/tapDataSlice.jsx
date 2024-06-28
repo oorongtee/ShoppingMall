@@ -1,10 +1,10 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { getTapData } from "./getdata";
+import { GetTapData } from "./getdata";
 
 //這裡抓產銷履歷與有機蔬果行情的資料，url:https://data.moa.gov.tw/open_detail.aspx?id=H44
 
-const fetchData = createAsyncThunk('tapData/fetchData', async () => {
-    const response = await getTapData();
+const fetchTapData = createAsyncThunk('tapData/fetchTapData', async () => {
+    const response = await GetTapData();
     return response.data;
 })
 
@@ -14,14 +14,14 @@ const tapDataSlice = createSlice({
     reducers: {},
     extraReducers: (builder) => {
         builder
-            .addCase(fetchData.pending, (state) => {
+            .addCase(fetchTapData.pending, (state) => {
                 state.status = 'loading';
             })
-            .addCase(fetchData.fulfilled, (state, action) => {
+            .addCase(fetchTapData.fulfilled, (state, action) => {
                 state.status = 'succeeded';
                 state.data = action.payload;
             })
-            .addCase(fetchData.rejected, (state, action) => {
+            .addCase(fetchTapData.rejected, (state, action) => {
                 state.status = 'failed';
                 state.error = action.error.message;
             });
@@ -29,4 +29,4 @@ const tapDataSlice = createSlice({
 });
 
 export default tapDataSlice.reducer;
-export {fetchData};
+export {fetchTapData};

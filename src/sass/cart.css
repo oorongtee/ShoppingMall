@@ -1,0 +1,58 @@
+#Card.show {
+  position: fixed;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  animation: fadeIn 1s forwards; /* 使用fadeIn动画 */
+  border: 1px solid black;
+  z-index: 1000;
+  background-color: tomato;
+}
+
+#Card {
+  position: fixed;
+  right: -100%; 
+  width: 300px;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeOut 1s forwards; /* 使用fadeOut动画 */
+  border: 1px solid black;
+  z-index: 1000;
+  background-color: tomato;
+}
+
+/* 显示动画 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 隐藏动画 */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* 应用动画的类 */
+.fadeIn {
+  animation: fadeIn 1s forwards;
+}
+
+.fadeOut {
+  animation: fadeOut 1s forwards;
+}

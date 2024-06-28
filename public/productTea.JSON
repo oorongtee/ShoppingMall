@@ -1,0 +1,59 @@
+{
+    "data": [
+    {
+        "id": 0,
+        "name": "紅茶",
+        "amount": 1,
+        "description":"紅茶",
+        "price":30,
+        "category":"tea",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Cocos_nucifera_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-187.jpg/330px-Cocos_nucifera_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-187.jpg"
+    },
+    {
+        "id": 1,
+        "name": "綠茶",
+        "amount": 1,
+        "description":"綠茶",
+        "price":30,
+        "category":"tea",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Purple_passionfruit.jpg/375px-Purple_passionfruit.jpg"
+    },
+    {
+      "id": 2,
+      "name": "烏龍",
+      "amount": 1,
+      "description":"烏龍",
+      "price":35,
+      "category":"tea",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Purple_passionfruit.jpg/375px-Purple_passionfruit.jpg"
+    },
+    {
+      "id": 3,
+      "name": "四季春",
+      "amount": 1,
+      "description":"四季春",
+      "price":35,
+      "category":"tea",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Purple_passionfruit.jpg/375px-Purple_passionfruit.jpg"
+    },
+    {
+      "id": 4,
+      "name": "波霸奶茶",
+      "amount": 1,
+      "description":"波霸奶茶",
+      "price":55,
+      "category":"milkTea",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Purple_passionfruit.jpg/375px-Purple_passionfruit.jpg"
+    },
+    {
+      "id": 5,
+      "name": "紅茶拿鐵",
+      "amount": 1,
+      "description":"紅茶拿鐵",
+      "price":65,
+      "category":"milkTea",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Purple_passionfruit.jpg/375px-Purple_passionfruit.jpg"
+    }
+
+    ]
+  }

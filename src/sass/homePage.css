@@ -1,0 +1,38 @@
+.homepageCard-bordered-row {
+    border-top: 1px solid #000; 
+    border-bottom: 1px solid #000;
+    border-left: none;
+    border-right: none;
+    padding: 10px; 
+    margin-top: 10px;
+    margin-bottom: 36px;
+    margin-left: 0;
+    margin-right: 0;
+
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap; /* 防止換行 */
+}
+
+.custom-card {
+    width: 80%;
+    max-width: 250px; 
+    flex: 0 0 auto;
+    margin: 10px; 
+    height: auto; 
+}
+.custom-card-img {
+    height: 250px;
+    width: 100%; 
+    object-fit: cover; 
+}
+  
+.custom-card-body {
+      overflow: hidden;
+}
+
+.remove-under-line {
+    text-decoration: none;
+}

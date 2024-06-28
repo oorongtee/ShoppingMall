@@ -1,0 +1,7 @@
+.couponCard {
+    background-color: #ACFFFD;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 添加阴影效果 */
+    margin: 10px 0; /* 上下外边距 */
+    padding: 20px; /* 内边距 */
+    border-radius: 8px; /* 边框圆角 */
+  }

@@ -1,14 +1,17 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Provider } from "react-redux";
+import { AuthProvider } from './components/login/authLoginContext';
+
 import HeaderPage from './pages/headerPage';
-import HomePage from './pages/homePage/homePage';
+import HomePage from './pages/homePage';
 import FruitPage from './pages/fruitPage';
 import TeaPage from './pages/teaPage';
-import CartPage from './pages/cartPage';
-import ProfilePage from './pages/profilePage';
+// import CartPage from './pages/cartPage';
+import PersonalPage from './pages/personalPage';
 import LoginPage from './pages/loginPage';
+import CheckoutPage from './pages/checkoutPage';
+import Footer from './components/common/footer';
 
-import store from  "./redux/api/store"; 
+import CartShowController from './components/common/cartShowController';
 
 //這頁放 Apiprovider
 
@@ -17,20 +20,24 @@ import store from  "./redux/api/store";
 
 
 function App() {
+
   return (
+    <AuthProvider>
     <Router>
+    <CartShowController />    
       <HeaderPage/>
-      <Provider store={store}>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/fruit" element={<FruitPage />} />
+        <Route path="/fruit" element={<FruitPage />} /> 
         <Route path="/tea" element={<TeaPage />} />
-        <Route path="/cart" element={<CartPage />} />
-        <Route path="/profile" element={<ProfilePage />} />
+        {/* <Route path="/cart" element={<CartPage />} /> */}
+        <Route path="/profile" element={<PersonalPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/checkout" element={<CheckoutPage />} />
       </Routes>
-      </Provider>
+      <Footer/>
     </Router>
+    </AuthProvider>
   )
 }
 
