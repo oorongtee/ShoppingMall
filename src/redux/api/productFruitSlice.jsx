@@ -24,7 +24,7 @@ const fruitDataSlice = createSlice({
             .addCase(fetchFruitData.rejected, (state, action) => {
                 state.status = 'failed';
                 state.error = action.error.message;
-                
+                 
             });
     },
 });

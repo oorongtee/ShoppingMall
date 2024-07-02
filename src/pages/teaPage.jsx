@@ -23,16 +23,14 @@ function TeaPage() {
 };
 
     return (
-    <div>
-        <Container className="d-flex flex-column align-items-center mx-3">
-          <div className="d-flex justify-content-center align-items-center mb-3">
-            <h1 className="">oorongtee Store</h1>
-          </div>
-          <div className="d-flex justify-content-center align-items-center">
-            <p className="">oorongtee Store oorongtee Store oorongtee Store oorongtee Store oorongtee Store</p>
-          </div>
-          <ProductTeaList handleAddTeaToCart={handleAddTeaToCart}/>
-        </Container>
+    <div className="d-flex flex-column align-items-center mx-3">
+    <Container>
+      <div className="d-flex justify-content-center align-items-center flex-column mb-3">
+        <h1 className="tk-aktiv-grotesk">Oorongtee Store</h1>
+        <p className="tk-aktiv-grotesk-thin">Find the best products for your needs</p>
+      </div>
+      <ProductTeaList handleAddTeaToCart={handleAddTeaToCart}/>
+    </Container>
     </div>
     );
   }

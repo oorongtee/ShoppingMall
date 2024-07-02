@@ -1,27 +1,39 @@
-#Card.show {
+#stopPropagation{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 900;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#Cart.show {
   position: fixed;
   right: 0;
-  width: 300px;
+  width: 500px;
   height: 100%;
   opacity: 1;
   visibility: visible;
-  animation: fadeIn 1s forwards; /* 使用fadeIn动画 */
-  border: 1px solid black;
+  animation: fadeIn 1s forwards; /* fadeIn */
+  background-color: #B3D9D9;
+  border: 1px solid	#02DF82;
   z-index: 1000;
-  background-color: tomato;
+  box-shadow: 5px 5px 15px rgba(210, 242, 233, 0.8);
 }
 
-#Card {
+#Cart {
   position: fixed;
   right: -100%; 
-  width: 300px;
+  width: 500px;
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  animation: fadeOut 1s forwards; /* 使用fadeOut动画 */
-  border: 1px solid black;
+  animation: fadeOut 1s forwards; /* fadeOut */
+  background-color: #B3D9D9;
+  border: 1px solid #02DF82;
   z-index: 1000;
-  background-color: tomato;
+  box-shadow: 5px 5px 15px rgba(210, 242, 233, 0.8);
 }
 
 /* 显示动画 */

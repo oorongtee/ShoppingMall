@@ -1,7 +1,29 @@
-.couponCard {
-    background-color: #ACFFFD;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 添加阴影效果 */
-    margin: 10px 0; /* 上下外边距 */
-    padding: 20px; /* 内边距 */
-    border-radius: 8px; /* 边框圆角 */
+.profileCard {
+    background-image: linear-gradient(to right, #4B93FB,#ACFFFD);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    margin: 10px 0; 
+    padding: 20px;
+    border-radius: 8px; 
   }
+  
+#profilePicture{
+    border-radius: 50%; 
+    border: 1px solid #fff; 
+    width: 200px; 
+    height: 200px;
+}
+
+  #profileName {
+    background-image: linear-gradient(to right, #ADFEDC, #02DF82);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+    display: inline-block; 
+    font-weight: bold;
+    font-family: 'tk-aktiv-grotesk';
+  }
+.profileDetail{
+  font-weight: bold;
+  color: white;
+  font-family: 'tk-aktiv-grotesk-condensed';
+}

@@ -10,9 +10,6 @@ export const AuthProvider = ({ children }) => {
     useEffect(() => {
         setIsLoggedIn(!!token);
     }, [token]);
-
-    console.log('token', token);
-    console.log('isLoggedIn', isLoggedIn);
   
     return (
       <AuthLoginContext.Provider value={{ setToken, isLoggedIn }}>

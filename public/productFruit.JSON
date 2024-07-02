@@ -2,33 +2,33 @@
   "data": [
   {
       "id": 0,
-      "name": "香蕉",
+      "name": "椰子",
       "amount": 1,
-      "description":"香蕉",
+      "description":"椰子",
       "category":"vegetable",
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Cocos_nucifera_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-187.jpg/330px-Cocos_nucifera_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-187.jpg"
   },
   {
       "id": 1,
-      "name": "花胡瓜",
+      "name": "藍莓-進口",
       "amount": 1,
-      "description":"花胡瓜",
+      "description":"藍莓-進口",
       "category":"fruit",
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Purple_passionfruit.jpg/375px-Purple_passionfruit.jpg"
   },
   {
     "id": 2,
-    "name": "絲瓜",
+    "name": "百香果-其他",
     "amount": 1,
-    "description":"絲瓜",
+    "description":"百香果-其他",
     "category":"fruit",
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Purple_passionfruit.jpg/375px-Purple_passionfruit.jpg"
   },
   {
     "id": 3,
-    "name": "九層塔",
+    "name": "小番茄-聖女",
     "amount": 1,
-    "description":"九層塔",
+    "description":"小番茄-聖女",
     "category":"fruit",
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Purple_passionfruit.jpg/375px-Purple_passionfruit.jpg"
   }

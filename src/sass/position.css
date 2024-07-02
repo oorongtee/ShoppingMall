@@ -1,10 +1,14 @@
-.top-20 {
-    top: 20vh !important;
+.top-10 {
+    top: 10vh !important;
   }
   
 .start-20 {
     left: 20vw !important;
   }
+
+.start-5 {
+    left: 5vw !important;
+}
 
 .mt-n1 {
     margin-top: -0.5rem !important;

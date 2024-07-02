@@ -1,10 +1,14 @@
 import { useContext, useState } from 'react';
 import { AuthLoginContext } from '../components/login/authLoginContext';
+import { Container } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
-import { Container, Row, Col } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
+
 
 function LoginPage() {
-  const { isLoggedIn, setToken } = useContext(AuthLoginContext);
+  const navigate = useNavigate();
+  const { setToken } = useContext(AuthLoginContext);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -25,6 +29,9 @@ function LoginPage() {
         if (responseLogin.status === 200) {
             const token = LoginTokenData.token;
             setToken(token);
+            setTimeout(() => {
+              navigate('/');
+            }, 300); 
 
         } else if (responseLogin.status === 400){
             // Handle error here
@@ -36,25 +43,26 @@ function LoginPage() {
     }
 }
 
-  const handleLogout = () => {
-    setToken(null);
-  };
-
-
   return (
     <Container fluid className="min-vh-100 d-flex align-items-center justify-content-center">
 
-        <div className="d-flex flex-column">
-          <input type="text" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email" className="mb-2" />
+        <div className="d-flex flex-column tk-aktiv-grotesk-thin">
+          <input type="text" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email" className="mb-2" required
+            pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"/>
           <p>eve.holt@reqres.in</p>
           
+          <input type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Password" className="mb-2" required/>
           
-          <input type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Password" className="mb-2" />
           <div className="d-flex justify-content-between">
-          <div>{isLoggedIn ? '已登入' : '未登入'}</div>
-          <button onClick={isLoggedIn ? handleLogout : handleLogin} className="">
-            {isLoggedIn ? '登出' : '登入'}
-          </button>
+            <div>
+              {/* 我是空格 */}
+            </div>
+
+            <div className="">
+              <Button variant="outline-success" className="rounded-pill text-black" onClick={handleLogin}>
+                Login
+              </Button>
+            </div>
           </div>
         </div>
 

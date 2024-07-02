@@ -9,7 +9,7 @@ import TeaPage from './pages/teaPage';
 import PersonalPage from './pages/personalPage';
 import LoginPage from './pages/loginPage';
 import CheckoutPage from './pages/checkoutPage';
-import Footer from './components/common/footer';
+import Footer from './pages/footer';
 
 import CartShowController from './components/common/cartShowController';
 
