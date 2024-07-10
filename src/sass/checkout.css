@@ -5,3 +5,29 @@
     padding: 20px;
     border-radius: 8px; 
   }
+  .walletCard{
+    background-image: linear-gradient(to right, #4B93FB,#ACFFFD);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    margin: 10px 0; 
+    padding: 20px;
+    border-radius: 8px; 
+  }
+
+  .totalPriceCard{
+    background-image: linear-gradient(to right, #4B93FB,#ACFFFD);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    margin: 10px 0; 
+    padding: 20px;
+    border-radius: 8px; 
+  }
+
+  .cartSummaryCard{
+    background-image: linear-gradient(to right, #4B93FB,#ACFFFD);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    margin: 10px 0; 
+    padding: 20px;
+    border-radius: 8px; 
+  }
+
+
+  

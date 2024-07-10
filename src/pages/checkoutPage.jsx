@@ -114,7 +114,7 @@ function CheckoutPage() {
     <Container className="">
       <Row>
         <Col xs={7} lg={7}>
-        <div className="p-3 rounded m-3" style={{backgroundColor: 'azure'}}>
+        <div className="p-3 rounded cartSummaryCard">
         <h3 className="tk-aktiv-grotesk">Shopping Cart Summary</h3>
 
         <Row className="gx-0 d-flex flex-column">
@@ -198,7 +198,7 @@ function CheckoutPage() {
         </Col>
 
         <Col xs={5} lg={5}>
-        <Row className="p-3 rounded m-3" style={{backgroundColor: 'azure'}}>
+        <Row className="p-3 rounded walletCard">
           <div className="">
           <h3>Wallet</h3>
           <div>Ray Cash：{apiProfileData.data && apiProfileData.data.data && apiProfileData.data.data[0].walletBalance}</div>
@@ -232,7 +232,7 @@ function CheckoutPage() {
           {isCouponAppliedFalse === true && <p>Coupon cannot be applied</p>}
         </Row>
 
-        <Row className="p-3 rounded m-3" style={{backgroundColor: 'azure'}}>
+        <Row className="p-3 rounded totalPriceCard" style={{backgroundColor: 'azure'}}>
           <div className="tk-aktiv-grotesk-thin">
           <p>Original Price：{cartData.cartTotalPrice}</p>
           <p>Discount：{couponUsagePrice}</p>

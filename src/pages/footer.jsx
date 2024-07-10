@@ -5,8 +5,7 @@ import '../sass/position.css';
 function Footer() {
   return (
   <div className="bg-black">
-    
-    <Container className="text-white m-5 p-5">
+    <Container className="text-white p-5">
       <Row>
         <Col xs={7} lg={7} className="mb-3 tk-aktiv-grotesk-condensed">
             <h1 className="">Subscribe Now</h1>
@@ -26,7 +25,7 @@ function Footer() {
 
         <Col xs={1} lg={1}></Col>
 
-        <Col xs={4} lg={4} className="mb-3 mb-md-0">
+        <Col xs={4} lg={4} className="mb-3">
         <div className="d-flex justify-items-center flex-column gap-4 tk-aktiv-grotesk-condensed">
 
           <ListGroup variant="flush">
@@ -66,7 +65,7 @@ function Footer() {
       </Row>
     </Container>
 
-    <Container className="text-white m-5 p-5">
+    <Container className="text-white p-5">
 
       <Row>
         <Col xs={7} lg={7} className="mb-3 mb-md-0 tk-aktiv-grotesk-condensed">
