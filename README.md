@@ -37,8 +37,8 @@ eve.holt@reqres.in
 
 > [!WARNING]
 > 如果購物車並無滿足條件，將無法使用優惠券，並且在結帳頁面右下方顯示"Coupon cannot be applied"
-
-- 結帳後購物車會被清空，並且打API出去
+> [!WARNING]
+> 農糧署API資料每日皆會更改，因此如果沒有成功抓到資料，商品價格會為0
 
 
 # 特別感謝
