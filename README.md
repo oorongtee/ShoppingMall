@@ -31,6 +31,8 @@ npm run dev
 # 登入
 ![螢幕擷取畫面 2024-08-22 014914](https://github.com/user-attachments/assets/7e2ba38f-6956-49e9-870f-c0baff03fb42)
 
+這部分是打API給https://reqres.in/，並接受response
+
 帳號請輸入
 ```
 eve.holt@reqres.in
