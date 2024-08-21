@@ -39,6 +39,14 @@ eve.holt@reqres.in
 > [!WARNING]
 > 需要登入後才能將商品置入購物車，否則會跳轉至登入頁面
 
+# 購物車
+![螢幕擷取畫面 2024-08-22 015700](https://github.com/user-attachments/assets/8b2dd3df-d14c-4901-8826-a08aeb751c28)
+> 請點選add to chart將商品置入購物車
+
+![螢幕擷取畫面 2024-08-22 015828](https://github.com/user-attachments/assets/6913d619-ef35-4a46-8b95-63234c0760b1)
+> 購物車可以調整商品數量，並點選checkout進入結帳流程
+
+
 # 其他事項
 > [!IMPORTANT]
 > 由於並沒有後端協作，很多功能皆以假資料製作，而且流程也很詭異，請見諒
