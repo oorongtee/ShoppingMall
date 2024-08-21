@@ -5,6 +5,7 @@ import { toggleCartShow} from '../redux/state/CartShowControllerState.jsx';
 import { AuthLoginContext } from '../components/login/authLoginContext';
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 //LOGO pic
 // 購物車與登入與個人頭像
@@ -26,6 +27,8 @@ function HeaderPage() {
   const handleLogin = () => {
     navigate('/login');
   }
+  const cartItemCount = useSelector((state) => state.cart.items.length);
+
 
 
   return (
@@ -65,7 +68,7 @@ function HeaderPage() {
               </span>
             </Nav.Link>
 
-            <Nav.Link className="btn btn-success" onClick={handleShowCartTag}>
+            <Nav.Link className="btn btn-success position-relative" onClick={handleShowCartTag}>
               <img
                 src="src/assets/shopping-cart.svg"
                 width="30"
@@ -73,6 +76,12 @@ function HeaderPage() {
                 className="d-inline-block align-top d-none d-lg-inline me-3"
                 alt="profile-round"
               />
+              <div
+                className="position-absolute translate-middle rounded-circle bg-info text-black d-flex justify-content-center align-items-center"
+                style={{ width: "25px", height: "25px", right: -15, top: 1 }}
+              >
+                {cartItemCount}
+              </div>
               <span className="d-lg-none tk-aktiv-grotesk-thin">cart</span>
             </Nav.Link>
 

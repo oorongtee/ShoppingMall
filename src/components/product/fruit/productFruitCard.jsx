@@ -31,7 +31,7 @@ function ProductFruitCard({ selectedFruitCategory,  handleAddFruitToCart }) {
       return apiFruithData.data.data.map(fruitItem => {
         const correspondingTapItem = tapDataApiData.data.find(tapItem => 
           tapItem.作物名稱 === fruitItem.name && 
-          tapItem.交易日期 === "20240629" && 
+          // tapItem.交易日期 === "20240818" && 
           tapItem.市場名稱 === "台北二");
         return { ...fruitItem, tapData: correspondingTapItem };
       });
