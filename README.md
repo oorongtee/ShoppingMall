@@ -23,6 +23,7 @@
 - 結帳後將購物車狀態及優惠券使用狀態打API出去
 
 # 開始
+此專案使用Vite作為Webpacker，請確保你已經安裝了 Node.js 和 npm，並啟動Vite 開發伺服器。
 ```
 npm run dev
 ```
