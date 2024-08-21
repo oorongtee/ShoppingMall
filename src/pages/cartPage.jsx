@@ -2,9 +2,7 @@
 //刪除按鈕，點擊後可以刪除該筆資料。
 //這裡模仿ubereat，接受購物車redux的更新
 //每次有更新就會重新render
-//這裡有一個checkout按鈕
 
-//要有chekout按鈕
 import { addToCart, removeFromCart, addAmountCart, reduceAmountCart} from '../redux/state/shoppingCartState';
 import { useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux';

@@ -1,14 +1,10 @@
 import ProductFruitList from '../components/product/fruit/productFruitList';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../redux/state/shoppingCartState';
-
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AuthLoginContext } from '../components/login/authLoginContext';
-
 import { Container} from 'react-bootstrap';
-
-
 
 function FruitPage() {
   const { isLoggedIn } = useContext(AuthLoginContext);

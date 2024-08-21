@@ -4,6 +4,8 @@ import { useRef } from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../../sass/homePage.css';
 
+//主頁的商品卡片
+
 function HomePageCard() {
     const sliderRef = useRef(null);
 

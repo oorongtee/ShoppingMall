@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { AuthProvider } from './components/login/authLoginContext';
-
 import HeaderPage from './pages/headerPage';
 import HomePage from './pages/homePage';
 import FruitPage from './pages/fruitPage';
@@ -10,12 +9,9 @@ import PersonalPage from './pages/personalPage';
 import LoginPage from './pages/loginPage';
 import CheckoutPage from './pages/checkoutPage';
 import Footer from './pages/footer';
-
 import CartShowController from './components/common/cartShowController';
 
 //這頁放 Apiprovider
-
-//背景暗與亮useContext 
 //登入狀態
 
 

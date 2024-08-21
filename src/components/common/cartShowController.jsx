@@ -3,6 +3,8 @@ import CartPage from '../../pages/cartPage';
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleCartShow,toggleCartNotShow } from '../../redux/state/CartShowControllerState';
 
+//控制購物車頁面的顯示，請參考redux>>state>>CartShowControllerState.jsx
+
 function CartShowController() {
   const dispatch = useDispatch();
   const cartData = useSelector((state) => state.cart);

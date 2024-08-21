@@ -6,7 +6,7 @@ import { Container, Row, Col  } from 'react-bootstrap';
 import '../../sass/userProfile.css';
 import couponIcon from '../../assets/couponIcon.png';
 
-
+//個人資料頁面
 function ProfilePage() {
 
     const apiProfileData = useSelector((state) => state.profileData);
