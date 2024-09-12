@@ -19,7 +19,7 @@
 - 購物車狀態以及顯示管理(redux)
 - 商品數量及價格管理(redux)
 - 購物結帳流程及優惠券的條件使用 (無優惠券管理)
-- 簡易的Bootstrap功能，無製作RWD
+- 簡易的Bootstrap功能，僅部分元件製作RWD
 - 結帳後將購物車狀態及優惠券使用狀態打API出去
 
 # 開始
@@ -30,6 +30,8 @@ npm run dev
 
 # 登入
 ![螢幕擷取畫面 2024-08-22 014914](https://github.com/user-attachments/assets/7e2ba38f-6956-49e9-870f-c0baff03fb42)
+
+這部分是打API給API host： https://reqres.in/ ，並接受response。
 
 帳號請輸入
 ```
