@@ -4,11 +4,11 @@ import '../sass/checkout.css'
 import { useState, useEffect } from 'react';
 import { fetchPersonalProfileData } from '../redux/api/personalProfileSlice';
 import { clearCart } from '../redux/state/shoppingCartState';
-
 import {Container, Row, Col, Card, Button } from 'react-bootstrap';
 import couponIcon from '../assets/couponIcon.png';
 
 function CheckoutPage() {
+  //在此抓的是store中的cart資料，而不是slice的cart資料，slice的name是用來做action去更改狀態的
   const cartData = useSelector((state) => state.cart);
   const apiProfileData = useSelector((state) => state.profileData);
   const dispatch = useDispatch();
@@ -22,8 +22,6 @@ function CheckoutPage() {
   const teaCartTotal = teaCartData.reduce((sum, item) => sum + item.totalPrice, 0);
 
   const couponUsagePrice = -(checkoutTotalPrice - cartData.cartTotalPrice)
-
-
 
   useEffect(() => {
     dispatch(fetchPersonalProfileData());

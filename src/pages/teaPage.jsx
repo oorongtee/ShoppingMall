@@ -13,7 +13,7 @@ function TeaPage() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  
+    //沒登入不給加入購物車
   const  handleAddTeaToCart = (item) => {
     if (!isLoggedIn) {
       navigate('/login');

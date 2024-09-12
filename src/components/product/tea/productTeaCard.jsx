@@ -2,13 +2,9 @@ import { useEffect, useMemo, useRef} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchTeaData } from '../../../redux/api/productTeaSlice';
 import PropTypes from 'prop-types';
-
 import '../../../sass/productPage.css'
-
 import { ChevronLeft, ChevronRight } from 'react-bootstrap-icons'; 
 import { Container, Row, Col, Card,Button } from 'react-bootstrap';
-
-
 
 //這裡顯示蔬果的商品卡片。功能有：
 //抓蔬果的API資料

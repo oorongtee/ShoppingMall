@@ -1,16 +1,16 @@
 import { useContext, useState } from 'react';
 import { AuthLoginContext } from '../components/login/authLoginContext';
-import { Container } from 'react-bootstrap';
+import { Container, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-
-import { Button } from 'react-bootstrap';
-
 
 function LoginPage() {
   const navigate = useNavigate();
-  const { setToken } = useContext(AuthLoginContext);
+  //請參考：src/components/login/authLoginContext.jsx，這裡的setToken是從AuthLoginContext拿來的
+  const {setToken} = useContext(AuthLoginContext);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  //登入失敗
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleLogin = async () => {
     try {
@@ -22,10 +22,8 @@ function LoginPage() {
           body: JSON.stringify({
               email, password})
         })
-        
         const LoginTokenData = await responseLogin.json()
-        
-
+        //接受api host回傳response
         if (responseLogin.status === 200) {
             const token = LoginTokenData.token;
             setToken(token);
@@ -34,14 +32,12 @@ function LoginPage() {
             }, 300); 
 
         } else if (responseLogin.status === 400){
-            // Handle error here
-            console.error('Login failed');
+            setErrorMessage('無法登入400');
         }
     } catch (error) {
-        // Handle error here
-        console.error('Login failed', error);
+        setErrorMessage('無法登入error');
     }
-}
+  }
 
   return (
     <Container fluid className="min-vh-100 d-flex align-items-center justify-content-center">
@@ -55,7 +51,7 @@ function LoginPage() {
           
           <div className="d-flex justify-content-between">
             <div>
-              {/* 我是空格 */}
+            {errorMessage && <div>{errorMessage}</div>}
             </div>
 
             <div className="">

@@ -8,15 +8,12 @@ import '../../sass/homePage.css';
 
 function HomePageCard() {
     const sliderRef = useRef(null);
-
     const scrollLeft = () => {
       sliderRef.current.scrollBy({ left: -300, behavior: 'smooth' });
     };
-  
     const scrollRight = () => {
       sliderRef.current.scrollBy({ left: 300, behavior: 'smooth' });
     };
-
     return(
     
   <Container fluid className="p-0 m-0">

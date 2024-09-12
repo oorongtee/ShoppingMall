@@ -24,9 +24,7 @@ function HomePage() {
         </div>
       </div>
     </Container>
-
     <HomePageCard />
-
     <Container fluid className="position-relative p-0 m-0">
       <div className="d-flex"> 
         <div style={{ maxHeight: '520px', overflow: 'hidden', width: '100%' }}> 
@@ -42,7 +40,6 @@ function HomePage() {
         </div>
       </div>
     </Container>
-
     <HomePageCard />
   </div>
   );

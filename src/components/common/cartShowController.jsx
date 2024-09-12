@@ -9,7 +9,7 @@ function CartShowController() {
   const dispatch = useDispatch();
   const cartData = useSelector((state) => state.cart);
   const cartTag = useSelector((state) => state.cartShow.cartTag);
-
+ 
   useEffect(() => {
     if (cartData && cartData.items.length > 0) {
       dispatch(toggleCartShow());
@@ -19,7 +19,7 @@ function CartShowController() {
   const toggleCartPage = () => {
     dispatch(toggleCartNotShow());
   };
-
+  
   return (
     <>
       {cartTag && <CartPage toggleCartPage={toggleCartPage} />}

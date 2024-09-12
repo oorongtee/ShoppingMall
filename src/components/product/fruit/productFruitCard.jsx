@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchFruitData } from '../../../redux/api/productFruitSlice';
 import { fetchTapData } from '../../../redux/api/tapDataSlice';
 import PropTypes from 'prop-types';
-
 import '../../../sass/productPage.css'
 
 import { ChevronLeft, ChevronRight } from 'react-bootstrap-icons'; 
@@ -60,7 +59,6 @@ function ProductFruitCard({ selectedFruitCategory,  handleAddFruitToCart }) {
 
   return (
     <div>
-
       <div className="d-flex justify-content-between">
         <div>
           <h1 className="tk-aktiv-grotesk-condensed">Product</h1>
@@ -70,7 +68,6 @@ function ProductFruitCard({ selectedFruitCategory,  handleAddFruitToCart }) {
           <Button variant="light" onClick={() => handleScroll('right')}><ChevronRight /></Button>
         </div>
       </div> 
-
       {apiFruithData.status === 'loading' || tapDataApiData.status === 'loading' && <p className="tk-aktiv-grotesk-thin">Loading...</p>}
       {apiFruithData.status === 'succeeded' && tapDataApiData.status === 'succeeded' && combinedFruitData && (
         <Container className="p-0 m-0 tk-aktiv-grotesk-thin">

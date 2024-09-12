@@ -2,13 +2,11 @@ import { fetchPersonalProfileData } from '../../redux/api/personalProfileSlice';
 import { useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Container, Row, Col  } from 'react-bootstrap';
-
 import '../../sass/userProfile.css';
 import couponIcon from '../../assets/couponIcon.png';
 
 //個人資料頁面
 function ProfilePage() {
-
     const apiProfileData = useSelector((state) => state.profileData);
     const dispatch = useDispatch();
   
@@ -16,11 +14,8 @@ function ProfilePage() {
       dispatch(fetchPersonalProfileData());
     }, [dispatch]);
     
-    console.log(apiProfileData);
-
     return (
       <div className="ProfilePage">
-
         <Container className="text-white">
           <Row>
         {/* 左 */} 
@@ -43,8 +38,7 @@ function ProfilePage() {
                   <h1 className="profileDetail">Wallet</h1>
                   <div className="profileDetail">Ray Cash：{apiProfileData.data && apiProfileData.data.data && apiProfileData.data.data[0].walletBalance}</div>
                 </div>
-              </div>
-              
+              </div>      
               <div className="d-flex justify-items-center flex-column text-dark tk-aktiv-grotesk-thin">
                 <div>
                 {
@@ -71,8 +65,6 @@ function ProfilePage() {
                 </div>
               </div>
             </div>
-
-
             </Col>
           </Row>  
         </Container>

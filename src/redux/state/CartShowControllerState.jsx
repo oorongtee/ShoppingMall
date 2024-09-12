@@ -1,3 +1,5 @@
+//控制購物車的顯示，用redux的action type控制html的className，傳cartTag給：src/pages/cartPage.jsx
+
 const TOGGLE_CART_SHOW = 'TOGGLE_CART_SHOW';
 const TOGGLE_CART_NOTSHOW = 'TOGGLE_CART_NOTSHOW';
 
@@ -29,7 +31,5 @@ const cartShowReducer = (state = initialState, action) => {
       return state;
   }
 };
-
-
 
 export default cartShowReducer;

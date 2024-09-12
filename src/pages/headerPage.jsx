@@ -7,34 +7,30 @@ import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
-//LOGO pic
+// LOGO pic
 // 購物車與登入與個人頭像
 
 function HeaderPage() {
   const { isLoggedIn, setToken } = useContext(AuthLoginContext);
   const navigate = useNavigate();
-
   const dispatch = useDispatch();
 
   const handleShowCartTag = () => {
     dispatch(toggleCartShow());
   };
-
+  //把登入token拿掉
   const handleLogout = () => {
     setToken(null);
   };
-
   const handleLogin = () => {
     navigate('/login');
   }
+  //購物車內的商品數量，從redux/shoppingCartState拿
   const cartItemCount = useSelector((state) => state.cart.items.length);
-
-
 
   return (
     <Navbar expand="lg" bg="white">
       <Container fluid className="p-0 m-0">
-
         <Navbar.Brand href="/">
         <img
           src="src/assets/pokemon.png" 

@@ -1,8 +1,3 @@
-//要顯示每一筆CartData來的資料，並且價格顯示是perItemPrice。
-//刪除按鈕，點擊後可以刪除該筆資料。
-//這裡模仿ubereat，接受購物車redux的更新
-//每次有更新就會重新render
-
 import { addToCart, removeFromCart, addAmountCart, reduceAmountCart} from '../redux/state/shoppingCartState';
 import { useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
@@ -14,17 +9,19 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 
 function CartPage({toggleCartPage}) {
+  //接受購物車資料
   const cartData = useSelector((state) => state.cart);
+  //控制購物車生成，用redux控制
   const cartTag = useSelector((state) => state.cartShow.cartTag);
   const dispatch = useDispatch();
-
+  //操控購物車商品數量
   useEffect(() => {
     dispatch(addToCart());
     dispatch(removeFromCart());
     dispatch(addAmountCart());
     dispatch(reduceAmountCart());
   }, [dispatch]);
-
+  //購物車的顯示遮罩
   const stopPropagation = (e) => {
     e.stopPropagation();
   };

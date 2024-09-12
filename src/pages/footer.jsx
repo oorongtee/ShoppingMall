@@ -21,13 +21,9 @@ function Footer() {
             </div> 
           </Form>
         </Col>
-
-
         <Col xs={1} lg={1}></Col>
-
         <Col xs={4} lg={4} className="mb-3">
         <div className="d-flex justify-items-center flex-column gap-4 tk-aktiv-grotesk-condensed">
-
           <ListGroup variant="flush">
             <ListGroup.Item className="bg-black text-white border-0 p-0">
               <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="1" className="">
@@ -64,9 +60,7 @@ function Footer() {
         </Col>
       </Row>
     </Container>
-
     <Container className="text-white p-5">
-
       <Row>
         <Col xs={7} lg={7} className="mb-3 mb-md-0 tk-aktiv-grotesk-condensed">
         <div className="mt-3 d-flex justify-content-between gap-2">
@@ -97,7 +91,6 @@ function Footer() {
           </div>
         </Col>
         <Col xs={1} lg={1}></Col>
-
         <Col xs={4} lg={4} className="mb-3 mb-md-0 tk-aktiv-grotesk-condensed">
         <div className="mt-3 d-flex justify-content-between gap-2">
           <div className="d-flex justify-items-center flex-column">
