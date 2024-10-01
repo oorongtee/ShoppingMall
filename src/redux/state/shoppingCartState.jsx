@@ -2,10 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const shoppingCartState = createSlice({
   name: 'cart',
-  initialState: {
-    items: [],
-    cartTotalPrice: 0,
-  },
+  initialState: {items: [],cartTotalPrice: 0,},
   reducers: {
     addToCart: (state, action) => {
       if (!action.payload) {
@@ -67,10 +64,10 @@ const shoppingCartState = createSlice({
       if (state.items) {
         state.items = [];
         let totalCartPrice = 0;
-        for (let item of state.items) { // This loop will not execute since state.items is empty
+        for (let item of state.items) { 
           totalCartPrice += (item.totalPrice || 0);
         }
-        state.cartTotalPrice = totalCartPrice; // This will correctly set cartTotalPrice to 0
+        state.cartTotalPrice = totalCartPrice;
       }
     },
   }
