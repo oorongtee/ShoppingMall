@@ -20,7 +20,6 @@ function ProductTeaList({  handleAddTeaToCart }){
     setSelectedTeaCategory(category);
   };
 
-
   return(
   <div className="SearchPage ">
 
