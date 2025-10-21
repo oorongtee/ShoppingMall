@@ -73,6 +73,7 @@ function CheckoutPage() {
   };
 
 //結帳打api出去
+//API HOST 掛掉了，所以這邊直接refresh
   const handleCheckout = async () => {
     const checkoutData = {
       userId: apiProfileData.data.data[0].userId,
@@ -85,17 +86,17 @@ function CheckoutPage() {
       totalPrice: checkoutTotalPrice
     }
     try {
-      const response = await fetch('https://reqres.in/api/users', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(checkoutData),
-      });
+      // const response = await fetch('https://reqres.in/api/users', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //   },
+      //   body: JSON.stringify(checkoutData),
+      // });
   
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
+      // if (!response.ok) {
+      //   throw new Error('Network response was not ok');
+      // }
 
       dispatch(clearCart(true)); //清空購物車
       setCheckoutTotalPrice(0); //重設總價
