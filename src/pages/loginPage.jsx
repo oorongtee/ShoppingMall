@@ -11,33 +11,59 @@ function LoginPage() {
   const [password, setPassword] = useState('');
   //登入失敗
   const [errorMessage, setErrorMessage] = useState('');
+//這個api host不服務了，但我懶得改，所以直接給用戶登入
+  // const handleLogin = async () => {
+  //   try {
+  //       const responseLogin = await fetch('https://reqres.in/api/login', {
+  //         method: 'POST',
+  //         headers: {
+  //           'Content-Type': 'application/json',
+  //         },
+  //         body: JSON.stringify({
+  //             email, password})
+  //       })
+  //       const LoginTokenData = await responseLogin.json()
+  //       //接受api host回傳response
+  //       if (responseLogin.status === 200) {
+  //           const token = LoginTokenData.token;
+  //           setToken(token);
+  //           setTimeout(() => {
+  //             navigate('/');
+  //           }, 300); 
 
-  const handleLogin = async () => {
-    try {
-        const responseLogin = await fetch('https://reqres.in/api/login', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-              email, password})
-        })
-        const LoginTokenData = await responseLogin.json()
-        //接受api host回傳response
-        if (responseLogin.status === 200) {
-            const token = LoginTokenData.token;
-            setToken(token);
-            setTimeout(() => {
-              navigate('/');
-            }, 300); 
+  //       } else if (responseLogin.status === 400){
+  //           setErrorMessage('無法登入400');
+  //       }
+  //   } catch (error) {
+  //       setErrorMessage('無法登入error');
+  //   }
+  // }
+const handleLogin = async () => {
+  try {
+    const token = 'FAKE-TOKEN-123456';
+    setToken(token);
 
-        } else if (responseLogin.status === 400){
-            setErrorMessage('無法登入400');
-        }
-    } catch (error) {
-        setErrorMessage('無法登入error');
-    }
+    // 導向首頁
+    setTimeout(() => {
+      navigate('/');
+    }, 300);
+
+  } catch (error) {
+    // 如果 fetch 發生錯誤（API 不回應、網路錯誤）
+    const token = 'FAKE-TOKEN-123456';
+    setToken(token);
+
+    // 可以選擇不顯示錯誤，或在 console 記錄
+    console.error('API 不回應，使用假 token 登入', error);
+
+    // 導向首頁
+    setTimeout(() => {
+      navigate('/');
+    }, 300);
   }
+};
+
+
 
   return (
     <Container fluid className="min-vh-100 d-flex align-items-center justify-content-center">
