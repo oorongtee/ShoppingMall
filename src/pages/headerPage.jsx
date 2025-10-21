@@ -33,7 +33,7 @@ function HeaderPage() {
       <Container fluid className="p-0 m-0">
         <Navbar.Brand href="/">
         <img
-          src="src/assets/pokemon.png" 
+          src="/pic/pokemon.png" 
           width="70" 
           height="70" 
           className="d-inline-block align-top"
@@ -66,7 +66,7 @@ function HeaderPage() {
 
             <Nav.Link className="btn btn-success position-relative" onClick={handleShowCartTag}>
               <img
-                src="src/assets/shopping-cart.svg"
+                src="/pic/shopping-cart.svg"
                 width="30"
                 height="30"
                 className="d-inline-block align-top d-none d-lg-inline me-3"
@@ -84,7 +84,7 @@ function HeaderPage() {
             <LinkContainer to="/profile" className="btn btn-success">
               <Nav.Link>
                 <img
-                src="src/assets/profile-round.svg" 
+                src="/pic/profile-round.svg" 
                 width="30" 
                 height="30" 
                 className="d-inline-block align-top d-none d-lg-inline me-3"

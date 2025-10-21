@@ -33,7 +33,7 @@ function HomePageCard() {
       <Col xs={6} md={4} lg={3} className="p-2">
         <Link to="/fruit" className="remove-under-line">
             <Card className="custom-card">
-            <Card.Img variant="top" src="../src/assets/apple.webp" className="custom-card-img" alt="Apple"/>
+            <Card.Img variant="top" src="/pic/apple.webp" className="custom-card-img" alt="Apple"/>
             <Card.Body className="custom-card-body">
                 <Card.Title>Apple</Card.Title>
             </Card.Body>
@@ -43,7 +43,7 @@ function HomePageCard() {
       <Col xs={6} md={4} lg={3} className="p-2">
         <Link to="/tea" className="remove-under-line">
             <Card className="custom-card">
-            <Card.Img variant="top" src="../src/assets/green-tea.jpg" className="custom-card-img" alt="green-tea"/>
+            <Card.Img variant="top" src="/pic/green-tea.jpg" className="custom-card-img" alt="green-tea"/>
             <Card.Body className="custom-card-body">
                 <Card.Title>Green Tea</Card.Title>
             </Card.Body>
@@ -53,7 +53,7 @@ function HomePageCard() {
       <Col xs={6} md={4} lg={3} className="p-2">
         <Link to="/fruit" className="remove-under-line">
             <Card className="custom-card">
-            <Card.Img variant="top" src="../src/assets/banana.webp" className="custom-card-img" alt="banana"/>
+            <Card.Img variant="top" src="/pic/banana.webp" className="custom-card-img" alt="banana"/>
             <Card.Body className="custom-card-body">
                 <Card.Title>Banana</Card.Title>
             </Card.Body>
@@ -63,7 +63,7 @@ function HomePageCard() {
       <Col xs={6} md={4} lg={3} className="p-2">
         <Link to="/tea" className="remove-under-line">
             <Card className="custom-card">
-            <Card.Img variant="top" src="../src/assets/oorong.jpg" className="custom-card-img" alt="oorong"/>
+            <Card.Img variant="top" src="/pic/oorong.jpg" className="custom-card-img" alt="oorong"/>
             <Card.Body className="custom-card-body">
                 <Card.Title>Oorong</Card.Title>
             </Card.Body>
@@ -73,7 +73,7 @@ function HomePageCard() {
       <Col xs={6} md={4} lg={3} className="p-2">
         <Link to="/tea" className="remove-under-line">
             <Card className="custom-card">
-            <Card.Img variant="top" src="../src/assets/red-tea.png" className="custom-card-img" alt="red-tea"/>
+            <Card.Img variant="top" src="/pic/red-tea.png" className="custom-card-img" alt="red-tea"/>
             <Card.Body className="custom-card-body">
                 <Card.Title>Red Tea</Card.Title>
             </Card.Body>

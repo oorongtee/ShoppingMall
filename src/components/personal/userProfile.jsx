@@ -3,7 +3,7 @@ import { useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Container, Row, Col  } from 'react-bootstrap';
 import '../../sass/userProfile.css';
-import couponIcon from '../../assets/couponIcon.png';
+import couponIcon from '/pic/couponIcon.png';
 
 //個人資料頁面
 function ProfilePage() {

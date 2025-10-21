@@ -11,7 +11,7 @@ function HomePage() {
   <div>
     <Container fluid className="position-relative p-0 m-0" >
       <div style={{ maxHeight: '720px', overflow: 'hidden', width: '100%' }}> 
-        <Image src="../src/assets/home-banner.webp" alt="Home Banner" fluid />
+        <Image src="/pic/home-banner.webp" alt="Home Banner" fluid />
       </div>
       <div className="position-absolute w-50 h-50 top-10 start-5 d-flex align-items-center justify-content-center">
         <div className="row">
@@ -28,7 +28,7 @@ function HomePage() {
     <Container fluid className="position-relative p-0 m-0">
       <div className="d-flex"> 
         <div style={{ maxHeight: '520px', overflow: 'hidden', width: '100%' }}> 
-          <Image src="../src/assets/tea-banner.jpg" alt="Home Banner" fluid />
+          <Image src="/pic/tea-banner.jpg" alt="Home Banner" fluid />
         </div>
         <div className="position-relative bg-black" style={{ maxHeight: '520px', overflow: 'hidden', width: '100%' }}> 
           <div className="position-absolute top-50 start-50 translate-middle text-white d-flex justify-content-center align-items-center flex-column">

@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import { fetchPersonalProfileData } from '../redux/api/personalProfileSlice';
 import { clearCart } from '../redux/state/shoppingCartState';
 import {Container, Row, Col, Card, Button } from 'react-bootstrap';
-import couponIcon from '../assets/couponIcon.png';
+import couponIcon from '/pic/couponIcon.png';
 
 function CheckoutPage() {
   //在此抓的是store中的cart資料，而不是slice的cart資料，slice的name是用來做action去更改狀態的
