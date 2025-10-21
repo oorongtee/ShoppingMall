@@ -32,11 +32,10 @@ npm run dev
 ![螢幕擷取畫面 2024-08-22 014914](https://github.com/user-attachments/assets/7e2ba38f-6956-49e9-870f-c0baff03fb42)
 
 這部分是打API給API host： https://reqres.in/ ，並接受response。
-(20251021備註：apiHost Dead了，所以把接受respond這部分備註，變成可以直接登入)
 
 帳號請輸入
 ```
-eve.holt@reqres.in
+(20251021備註：apiHost Dead了，所以把接受respond這部分備註，變成可以直接登入)
 ```
 密碼隨意輸入即可
 > [!WARNING]
