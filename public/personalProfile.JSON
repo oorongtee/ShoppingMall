@@ -12,14 +12,14 @@
         "couponId": "1",
         "amount": "10",
         "discount":"10",
-        "description":"黯然消魂家常菜-生菜滿100折10元",
+        "description":"家常菜-生菜滿100折10元",
         "expiryDate": "2022-12-31"
         },
         {
         "couponId": "2",
         "amount": "10",
         "discount":"20",
-        "description":"QQ好喝咩噗茶-買茶類折10元",
+        "description":"好喝茶-買茶類折10元",
         "expiryDate": "2023-01-31"
         }
         ]

@@ -71,7 +71,7 @@ const handleLogin = async () => {
         <div className="d-flex flex-column tk-aktiv-grotesk-thin">
           <input type="text" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email" className="mb-2" required
             pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"/>
-          <p>eve.holt@reqres.in</p>
+          <p>毋須帳密，直接登入即可</p>
           
           <input type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Password" className="mb-2" required/>
           
