@@ -18,7 +18,7 @@ function HomePageCard() {
     
   <Container fluid className="p-0 m-0">
     <Row>
-      <Col sm={8} className="ps-4 pt-2">Trending products</Col>
+      <Col md={8} className="ps-4 pt-2">Trending products</Col>
       <Col sm={4} className="d-flex justify-content-end">
       <Button variant="" onClick={scrollLeft} style={{ border: 'none', backgroundColor: 'transparent' }}>
         <i className="bi bi-arrow-left"></i>
