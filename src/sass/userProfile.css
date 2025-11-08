@@ -1,5 +1,5 @@
 .profileCard {
-    background-image: linear-gradient(to right, #6dab64,#e7efdf);
+    background-image: linear-gradient(to right, #6dab64,#8ee23a);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
     margin: 10px 0; 
     padding: 20px;
@@ -14,7 +14,7 @@
 }
 
   #profileName {
-    background-image: linear-gradient(to right, #ADFEDC, #02DF82);
+    background-image: linear-gradient(to right, #fefefe, #ffffff);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; 
